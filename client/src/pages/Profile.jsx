@@ -145,6 +145,7 @@ const Profile = () => {
             
         }
     };
+    
 
     const handleListingDelete = async(listingId)=>{
         try {
@@ -209,7 +210,7 @@ const Profile = () => {
        {userListings && userListings.length > 0 && 
        <div className=" flex flex-col gap-4">
         <h1 className='text-center mt-7 text-2xl font-semibold'>Your Listings</h1>
-      {  userListings.map((listing)=>(
+         {userListings.map((listing)=>(
             <div key={listing._id} className='border gap-4 rounded-lg p-3 flex justify-between items-center'>
                 <Link to = {`/listing/${listing._id}`}>
                     <img className='h-16 w-16 object-contain ' src={listing.imageUrls[0]} alt="listing cover" />
@@ -228,9 +229,7 @@ const Profile = () => {
 
 
             </div>
-         )
-
-         ) }
+         )) }
         
        </div> }
          
