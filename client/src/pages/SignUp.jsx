@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, Navigate, useNavigate} from 'react-router-dom'
 import OAuth from '../components/OAuth';
 
-const SingUp = () => {
+const SignUp = () => {
     const[formData, setFormData] = useState({});
     const[error, setError]= useState(null);
     const[loading, setLoading]= useState(false);
@@ -67,4 +67,4 @@ const SingUp = () => {
   )
 }
 
-export default SingUp
+export default SignUp
